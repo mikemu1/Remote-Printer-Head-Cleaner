@@ -1,3 +1,12 @@
+'''
+prettyclean.py
+
+Email printer with HTML text to clean printheads
+
+To beach printer via hpeprint
+From gmail app account
+
+'''
 import smtplib
 from email.message import EmailMessage
 from datetime import datetime
