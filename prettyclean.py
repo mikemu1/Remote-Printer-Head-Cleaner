@@ -15,10 +15,11 @@ from pretty import *
 dts = datetime.now().ctime()
 print(dts)
 
-TO_EMAIL_ADDRESS = '88b34hjm@hpeprint.com'
+TO_EMAIL_ADDRESS = 'nsbeachprinter@hpeprint.com'
+# TO_EMAIL_ADDRESS = '88b34hjm@hpeprint.com'
 # TO_EMAIL_ADDRESS = 'mikemu0919@icloud.com'
 
-txt = f"Clean printer heads {dts}"
+txt = f"Clean printer heads {dts} {MY_EMAIL_ADDRESS}"
 
 EMAIL_CONTENT = f'''
 <!DOCTYPE html>
