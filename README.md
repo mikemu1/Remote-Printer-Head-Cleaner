@@ -1,18 +1,19 @@
 # Pretty Clean
 
--------
+---
 
-### prettyclean.py
+*prettyclean.py*
 
 ## Description:
 
 Python script to clean printheads on remote HP5520 printer.
 
-Sends email to #remoteaddress@hpeprint.com# 
+Sends email to <remoteaddress@hpeprint.com> 
 
-Uses Googlemail with App Password
+Via Gmail with App Password
 
-----------------
+---
 
 Mike Mueller
-mikemu1@cocast.net
+
+mikemu1@comcast.net
