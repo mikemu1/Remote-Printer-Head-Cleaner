@@ -1,20 +1,22 @@
 '''
-prettyclean.py
+icclean.py
 
 Email printer with HTML text to clean printheads
 
 To beach printer via hpeprint
-From gmail app account
+From icloud app account
 
 '''
 import smtplib
 from email.message import EmailMessage
 from datetime import datetime
-from pretty import *
+#from pretty import *
 
 dts = datetime.now().ctime()
 print(dts)
 
+MY_EMAIL_ADDRESS = 'mikemu0919@icloud.com'
+MY_EMAIL_PASSWORD = 'ywqj-amdp-usab-ihlr'
 TO_EMAIL_ADDRESS = 'nsbeachprinter@hpeprint.com'
 # TO_EMAIL_ADDRESS = '88b34hjm@hpeprint.com'
 # TO_EMAIL_ADDRESS = 'mikemu0919@icloud.com'
@@ -54,7 +56,10 @@ msg['To'] = TO_EMAIL_ADDRESS
 msg.set_content(EMAIL_CONTENT, subtype='html')
 
 
-with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+with smtplib.SMTP('smtp.mail.me.com', 587) as smtp:
+    print(smtp.ehlo())
+    print(smtp.starttls())
+    print(smtp.ehlo())
     print(smtp.login(MY_EMAIL_ADDRESS, MY_EMAIL_PASSWORD))
     print(smtp.send_message(msg))
 

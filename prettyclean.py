@@ -7,6 +7,8 @@ To beach printer via hpeprint
 From gmail app account
 
 '''
+
+import sys
 import smtplib
 from email.message import EmailMessage
 from datetime import datetime
@@ -19,7 +21,7 @@ TO_EMAIL_ADDRESS = 'nsbeachprinter@hpeprint.com'
 # TO_EMAIL_ADDRESS = '88b34hjm@hpeprint.com'
 # TO_EMAIL_ADDRESS = 'mikemu0919@icloud.com'
 
-txt = f"Clean printer heads {dts} {MY_EMAIL_ADDRESS}"
+txt = f"Clean printer {sys.argv[0]} {dts} {MY_EMAIL_ADDRESS}"
 
 EMAIL_CONTENT = f'''
 <!DOCTYPE html>
