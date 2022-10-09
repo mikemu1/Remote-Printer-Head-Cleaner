@@ -12,6 +12,10 @@ Sends email to printeraddress@hpeprint.com
 
 Via Gmail with App Password
 
+### Problems:
+
+Can't send by any email account other than GMail
+
 #### Author:
 
 Mike Mueller
